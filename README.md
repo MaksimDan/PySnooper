@@ -12,6 +12,8 @@ Most people would use `print` lines, in strategic locations, some of them showin
 
 What makes **PySnooper** stand out from all other code intelligence tools? You can use it in your shitty, sprawling enterprise codebase without having to do any setup. Just slap the decorator on, as shown below, and redirect the output to a dedicated log file by specifying its path as the first argument.
 
+This fork enables you to also, optionally visualize you call trace using graphviz.
+
 # Example #
 
 We're writing a function that converts a number to binary, by returning a list of bits. Let's snoop on it by adding the `@pysnooper.snoop()` decorator:
@@ -122,6 +124,23 @@ Show snoop lines for functions that your function calls:
 ```python
 @pysnooper.snoop(depth=2)
 ```
+
+Sample output using the visualization feature. 
+
+```
+@pysnooper.snoop(vis_args=['n', 'a', 'b'], vis_outfile=os.path.join(_dirname, '../resources/fib.png'))
+def fib(n):
+    if n <= 1:
+        return n
+    else:
+        a = fib(n - 1)
+        b = fib(n - 2)
+        return a + b
+
+fib(5)
+```
+
+![fib5](tests/resources/fib..png)
 
 **See [Advanced Usage](https://github.com/cool-RR/PySnooper/blob/master/ADVANCED_USAGE.md) for more options.** <------
 
