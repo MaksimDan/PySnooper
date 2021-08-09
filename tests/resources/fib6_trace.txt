@@ -1,0 +1,224 @@
+Source path:... /Users/danielm/Dropbox/software-projects/rcviz/rcviz/reviz2.py
+Starting var:.. n = 6
+14:42:59.789716 call         5 def fib(n):
+14:42:59.789899 line         6     if n <= 1:
+14:42:59.789925 line         9         a = fib(n - 1)
+    Starting var:.. n = 5
+    14:42:59.789959 call         5 def fib(n):
+    14:42:59.789988 line         6     if n <= 1:
+    14:42:59.790007 line         9         a = fib(n - 1)
+        Starting var:.. n = 4
+        14:42:59.790032 call         5 def fib(n):
+        14:42:59.790057 line         6     if n <= 1:
+        14:42:59.790075 line         9         a = fib(n - 1)
+            Starting var:.. n = 3
+            14:42:59.790100 call         5 def fib(n):
+            14:42:59.790124 line         6     if n <= 1:
+            14:42:59.790142 line         9         a = fib(n - 1)
+                Starting var:.. n = 2
+                14:42:59.790165 call         5 def fib(n):
+                14:42:59.790189 line         6     if n <= 1:
+                14:42:59.790284 line         9         a = fib(n - 1)
+                    Starting var:.. n = 1
+                    14:42:59.790318 call         5 def fib(n):
+                    14:42:59.790344 line         6     if n <= 1:
+                    14:42:59.790362 line         7         return n
+                    14:42:59.790378 return       7         return n
+                    Return value:.. 1
+                    Elapsed time: 00:00:00.000094
+                New var:....... a = 1
+                14:42:59.790428 line        10         b = fib(n - 2)
+                    Starting var:.. n = 0
+                    14:42:59.790462 call         5 def fib(n):
+                    14:42:59.790487 line         6     if n <= 1:
+                    14:42:59.790507 line         7         return n
+                    14:42:59.790524 return       7         return n
+                    Return value:.. 0
+                    Elapsed time: 00:00:00.000091
+                New var:....... b = 0
+                14:42:59.790563 line        11         return a + b
+                14:42:59.790589 return      11         return a + b
+                Return value:.. 1
+                Elapsed time: 00:00:00.000456
+            New var:....... a = 1
+            14:42:59.790630 line        10         b = fib(n - 2)
+                Starting var:.. n = 1
+                14:42:59.790661 call         5 def fib(n):
+                14:42:59.790685 line         6     if n <= 1:
+                14:42:59.790702 line         7         return n
+                14:42:59.790718 return       7         return n
+                Return value:.. 1
+                Elapsed time: 00:00:00.000086
+            New var:....... b = 1
+            14:42:59.790755 line        11         return a + b
+            14:42:59.790780 return      11         return a + b
+            Return value:.. 2
+            Elapsed time: 00:00:00.000712
+        New var:....... a = 2
+        14:42:59.790820 line        10         b = fib(n - 2)
+            Starting var:.. n = 2
+            14:42:59.790851 call         5 def fib(n):
+            14:42:59.790875 line         6     if n <= 1:
+            14:42:59.790892 line         9         a = fib(n - 1)
+                Starting var:.. n = 1
+                14:42:59.790915 call         5 def fib(n):
+                14:42:59.790938 line         6     if n <= 1:
+                14:42:59.790955 line         7         return n
+                14:42:59.790972 return       7         return n
+                Return value:.. 1
+                Elapsed time: 00:00:00.000086
+            New var:....... a = 1
+            14:42:59.791013 line        10         b = fib(n - 2)
+                Starting var:.. n = 0
+                14:42:59.791044 call         5 def fib(n):
+                14:42:59.791068 line         6     if n <= 1:
+                14:42:59.791085 line         7         return n
+                14:42:59.791101 return       7         return n
+                Return value:.. 0
+                Elapsed time: 00:00:00.000086
+            New var:....... b = 0
+            14:42:59.791157 line        11         return a + b
+            14:42:59.791186 return      11         return a + b
+            Return value:.. 1
+            Elapsed time: 00:00:00.000367
+        New var:....... b = 1
+        14:42:59.791227 line        11         return a + b
+        14:42:59.791257 return      11         return a + b
+        Return value:.. 3
+        Elapsed time: 00:00:00.001257
+    New var:....... a = 3
+    14:42:59.791298 line        10         b = fib(n - 2)
+        Starting var:.. n = 3
+        14:42:59.791330 call         5 def fib(n):
+        14:42:59.791359 line         6     if n <= 1:
+        14:42:59.791377 line         9         a = fib(n - 1)
+            Starting var:.. n = 2
+            14:42:59.791402 call         5 def fib(n):
+            14:42:59.791431 line         6     if n <= 1:
+            14:42:59.791449 line         9         a = fib(n - 1)
+                Starting var:.. n = 1
+                14:42:59.791474 call         5 def fib(n):
+                14:42:59.791498 line         6     if n <= 1:
+                14:42:59.791520 line         7         return n
+                14:42:59.791538 return       7         return n
+                Return value:.. 1
+                Elapsed time: 00:00:00.000097
+            New var:....... a = 1
+            14:42:59.791580 line        10         b = fib(n - 2)
+                Starting var:.. n = 0
+                14:42:59.791613 call         5 def fib(n):
+                14:42:59.791639 line         6     if n <= 1:
+                14:42:59.791656 line         7         return n
+                14:42:59.791673 return       7         return n
+                Return value:.. 0
+                Elapsed time: 00:00:00.000092
+            New var:....... b = 0
+            14:42:59.791714 line        11         return a + b
+            14:42:59.791742 return      11         return a + b
+            Return value:.. 1
+            Elapsed time: 00:00:00.000376
+        New var:....... a = 1
+        14:42:59.791787 line        10         b = fib(n - 2)
+            Starting var:.. n = 1
+            14:42:59.791820 call         5 def fib(n):
+            14:42:59.791846 line         6     if n <= 1:
+            14:42:59.791864 line         7         return n
+            14:42:59.791887 return       7         return n
+            Return value:.. 1
+            Elapsed time: 00:00:00.000096
+        New var:....... b = 1
+        14:42:59.791924 line        11         return a + b
+        14:42:59.791949 return      11         return a + b
+        Return value:.. 2
+        Elapsed time: 00:00:00.000651
+    New var:....... b = 2
+    14:42:59.791989 line        11         return a + b
+    14:42:59.792014 return      11         return a + b
+    Return value:.. 5
+    Elapsed time: 00:00:00.002090
+New var:....... a = 5
+14:42:59.792055 line        10         b = fib(n - 2)
+    Starting var:.. n = 4
+    14:42:59.792086 call         5 def fib(n):
+    14:42:59.792126 line         6     if n <= 1:
+    14:42:59.792145 line         9         a = fib(n - 1)
+        Starting var:.. n = 3
+        14:42:59.792179 call         5 def fib(n):
+        14:42:59.792205 line         6     if n <= 1:
+        14:42:59.792223 line         9         a = fib(n - 1)
+            Starting var:.. n = 2
+            14:42:59.792247 call         5 def fib(n):
+            14:42:59.792270 line         6     if n <= 1:
+            14:42:59.792287 line         9         a = fib(n - 1)
+                Starting var:.. n = 1
+                14:42:59.792312 call         5 def fib(n):
+                14:42:59.792339 line         6     if n <= 1:
+                14:42:59.792358 line         7         return n
+                14:42:59.792375 return       7         return n
+                Return value:.. 1
+                Elapsed time: 00:00:00.000097
+            New var:....... a = 1
+            14:42:59.792418 line        10         b = fib(n - 2)
+                Starting var:.. n = 0
+                14:42:59.792453 call         5 def fib(n):
+                14:42:59.792479 line         6     if n <= 1:
+                14:42:59.792499 line         7         return n
+                14:42:59.792516 return       7         return n
+                Return value:.. 0
+                Elapsed time: 00:00:00.000096
+            New var:....... b = 0
+            14:42:59.792558 line        11         return a + b
+            14:42:59.792587 return      11         return a + b
+            Return value:.. 1
+            Elapsed time: 00:00:00.000373
+        New var:....... a = 1
+        14:42:59.792629 line        10         b = fib(n - 2)
+            Starting var:.. n = 1
+            14:42:59.792663 call         5 def fib(n):
+            14:42:59.792688 line         6     if n <= 1:
+            14:42:59.792706 line         7         return n
+            14:42:59.792723 return       7         return n
+            Return value:.. 1
+            Elapsed time: 00:00:00.000089
+        New var:....... b = 1
+        14:42:59.792761 line        11         return a + b
+        14:42:59.792788 return      11         return a + b
+        Return value:.. 2
+        Elapsed time: 00:00:00.000646
+    New var:....... a = 2
+    14:42:59.792833 line        10         b = fib(n - 2)
+        Starting var:.. n = 2
+        14:42:59.792867 call         5 def fib(n):
+        14:42:59.792894 line         6     if n <= 1:
+        14:42:59.792916 line         9         a = fib(n - 1)
+            Starting var:.. n = 1
+            14:42:59.792945 call         5 def fib(n):
+            14:42:59.792971 line         6     if n <= 1:
+            14:42:59.792988 line         7         return n
+            14:42:59.793005 return       7         return n
+            Return value:.. 1
+            Elapsed time: 00:00:00.000092
+        New var:....... a = 1
+        14:42:59.793046 line        10         b = fib(n - 2)
+            Starting var:.. n = 0
+            14:42:59.793078 call         5 def fib(n):
+            14:42:59.793102 line         6     if n <= 1:
+            14:42:59.793119 line         7         return n
+            14:42:59.793135 return       7         return n
+            Return value:.. 0
+            Elapsed time: 00:00:00.000086
+        New var:....... b = 0
+        14:42:59.793172 line        11         return a + b
+        14:42:59.793196 return      11         return a + b
+        Return value:.. 1
+        Elapsed time: 00:00:00.000360
+    New var:....... b = 1
+    14:42:59.793235 line        11         return a + b
+    14:42:59.793259 return      11         return a + b
+    Return value:.. 3
+    Elapsed time: 00:00:00.001204
+New var:....... b = 3
+14:42:59.793298 line        11         return a + b
+14:42:59.793321 return      11         return a + b
+Return value:.. 8
+Elapsed time: 00:00:00.003653

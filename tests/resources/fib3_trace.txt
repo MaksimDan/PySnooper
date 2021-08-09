@@ -1,0 +1,756 @@
+Source path:... /Users/danielm/Dropbox/software-projects/PySnooper/tests/rcviz/test_rcviz.py
+    Elapsed time: 00:00:00.001127
+Source path:... /Users/danielm/Dropbox/software-projects/PySnooper/tests/rcviz/test_rcviz.py
+    Elapsed time: 00:00:00.000527
+Source path:... /Users/danielm/Dropbox/software-projects/PySnooper/tests/rcviz/test_rcviz.py
+Starting var:.. n = 6
+Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc24838f820>
+00:19:49.468505 call        11     def fib(n):
+00:19:49.469633 line        12         if n <= 1:
+00:19:49.469872 line        15             a = fib(n - 1)
+    Starting var:.. n = 5
+    Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc24838f820>
+    00:19:49.470111 call        11     def fib(n):
+    00:19:49.470668 line        12         if n <= 1:
+    00:19:49.470823 line        15             a = fib(n - 1)
+        Starting var:.. n = 4
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc24838f820>
+        00:19:49.470977 call        11     def fib(n):
+        00:19:49.471456 line        12         if n <= 1:
+        00:19:49.471671 line        15             a = fib(n - 1)
+            Starting var:.. n = 3
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc24838f820>
+            00:19:49.471798 call        11     def fib(n):
+            00:19:49.472334 line        12         if n <= 1:
+            00:19:49.472451 line        15             a = fib(n - 1)
+                Starting var:.. n = 2
+                Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc24838f820>
+                00:19:49.472668 call        11     def fib(n):
+                00:19:49.473081 line        12         if n <= 1:
+                00:19:49.473204 line        15             a = fib(n - 1)
+                    Starting var:.. n = 1
+                    Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc24838f820>
+                    00:19:49.473407 call        11     def fib(n):
+                    00:19:49.473922 line        12         if n <= 1:
+                    00:19:49.474058 line        13             return n
+                    00:19:49.474238 return      13             return n
+                    Return value:.. 1
+                    Elapsed time: 00:00:00.001122
+                00:19:49.474686 exception   15             a = fib(n - 1)
+                Exception:..... AttributeError: 'TraceNode' object has no attribute 'parameters_of_interest'
+                Call ended by exception
+                Elapsed time: 00:00:00.002473
+            00:19:49.475289 exception   15             a = fib(n - 1)
+            Exception:..... AttributeError: 'TraceNode' object has no attribute 'parameters_of_interest'
+            Call ended by exception
+            Elapsed time: 00:00:00.004569
+        00:19:49.476488 exception   15             a = fib(n - 1)
+        Exception:..... AttributeError: 'TraceNode' object has no attribute 'parameters_of_interest'
+        Call ended by exception
+        Elapsed time: 00:00:00.006116
+    00:19:49.477229 exception   15             a = fib(n - 1)
+    Exception:..... AttributeError: 'TraceNode' object has no attribute 'parameters_of_interest'
+    Call ended by exception
+    Elapsed time: 00:00:00.007861
+00:19:49.478185 exception   15             a = fib(n - 1)
+Exception:..... AttributeError: 'TraceNode' object has no attribute 'parameters_of_interest'
+Call ended by exception
+Elapsed time: 00:00:00.010326
+Source path:... /Users/danielm/Dropbox/software-projects/PySnooper/tests/rcviz/test_rcviz.py
+Starting var:.. n = 6
+Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+00:21:09.937730 call        11     def fib(n):
+00:21:09.939473 line        12         if n <= 1:
+00:21:09.939983 line        15             a = fib(n - 1)
+    Starting var:.. n = 5
+    Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+    00:21:09.940275 call        11     def fib(n):
+    00:21:09.941104 line        12         if n <= 1:
+    00:21:09.941292 line        15             a = fib(n - 1)
+        Starting var:.. n = 4
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+        00:21:09.941643 call        11     def fib(n):
+        00:21:09.942270 line        12         if n <= 1:
+        00:21:09.942409 line        15             a = fib(n - 1)
+            Starting var:.. n = 3
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+            00:21:09.942719 call        11     def fib(n):
+            00:21:09.943188 line        12         if n <= 1:
+            00:21:09.943343 line        15             a = fib(n - 1)
+                Starting var:.. n = 2
+                Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+                00:21:09.943647 call        11     def fib(n):
+                00:21:09.944117 line        12         if n <= 1:
+                00:21:09.944277 line        15             a = fib(n - 1)
+                    Starting var:.. n = 1
+                    Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+                    00:21:09.944446 call        11     def fib(n):
+                    00:21:09.945048 line        12         if n <= 1:
+                    00:21:09.945273 line        13             return n
+                    00:21:09.945499 return      13             return n
+                    Return value:.. 1
+                    Elapsed time: 00:00:00.001471
+                New var:....... a = 1
+                00:21:10.254791 line        16             b = fib(n - 2)
+                    Starting var:.. n = 0
+                    Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+                    00:21:10.255490 call        11     def fib(n):
+                    00:21:10.256233 line        12         if n <= 1:
+                    00:21:10.256378 line        13             return n
+                    00:21:10.256514 return      13             return n
+                    Return value:.. 0
+                    Elapsed time: 00:00:00.001272
+                New var:....... b = 0
+                00:21:10.630030 line        17             return a + b
+                00:21:10.630682 return      17             return a + b
+                Return value:.. 1
+                Elapsed time: 00:00:00.687453
+            New var:....... a = 1
+            00:21:11.071211 line        16             b = fib(n - 2)
+                Starting var:.. n = 1
+                Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+                00:21:11.071935 call        11     def fib(n):
+                00:21:11.072593 line        12         if n <= 1:
+                00:21:11.072881 line        13             return n
+                00:21:11.073077 return      13             return n
+                Return value:.. 1
+                Elapsed time: 00:00:00.001519
+            New var:....... b = 1
+            00:21:11.461095 line        17             return a + b
+            00:21:11.461627 return      17             return a + b
+            Return value:.. 2
+            Elapsed time: 00:00:01.519336
+        New var:....... a = 2
+        00:21:11.789701 line        16             b = fib(n - 2)
+            Starting var:.. n = 2
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+            00:21:11.790319 call        11     def fib(n):
+            00:21:11.790968 line        12         if n <= 1:
+            00:21:11.791126 line        15             a = fib(n - 1)
+                Starting var:.. n = 1
+                Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+                00:21:11.791386 call        11     def fib(n):
+                00:21:11.791928 line        12         if n <= 1:
+                00:21:11.792114 line        13             return n
+                00:21:11.792256 return      13             return n
+                Return value:.. 1
+                Elapsed time: 00:00:00.001359
+            New var:....... a = 1
+            00:21:12.139935 line        16             b = fib(n - 2)
+                Starting var:.. n = 0
+                Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+                00:21:12.140590 call        11     def fib(n):
+                00:21:12.141251 line        12         if n <= 1:
+                00:21:12.141414 line        13             return n
+                00:21:12.141556 return      13             return n
+                Return value:.. 0
+                Elapsed time: 00:00:00.001322
+            New var:....... b = 0
+            00:21:12.483889 line        17             return a + b
+            00:21:12.484391 return      17             return a + b
+            Return value:.. 1
+            Elapsed time: 00:00:00.694383
+        New var:....... b = 1
+        00:21:12.835234 line        17             return a + b
+        00:21:12.835824 return      17             return a + b
+        Return value:.. 3
+        Elapsed time: 00:00:02.894524
+    New var:....... a = 3
+    00:21:13.177305 line        16             b = fib(n - 2)
+        Starting var:.. n = 3
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+        00:21:13.177930 call        11     def fib(n):
+        00:21:13.178650 line        12         if n <= 1:
+        00:21:13.178908 line        15             a = fib(n - 1)
+            Starting var:.. n = 2
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+            00:21:13.179197 call        11     def fib(n):
+            00:21:13.179681 line        12         if n <= 1:
+            00:21:13.179817 line        15             a = fib(n - 1)
+                Starting var:.. n = 1
+                Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+                00:21:13.180030 call        11     def fib(n):
+                00:21:13.180519 line        12         if n <= 1:
+                00:21:13.180665 line        13             return n
+                00:21:13.180879 return      13             return n
+                Return value:.. 1
+                Elapsed time: 00:00:00.001148
+            New var:....... a = 1
+            00:21:13.510206 line        16             b = fib(n - 2)
+                Starting var:.. n = 0
+                Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+                00:21:13.510775 call        11     def fib(n):
+                00:21:13.511437 line        12         if n <= 1:
+                00:21:13.511608 line        13             return n
+                00:21:13.511779 return      13             return n
+                Return value:.. 0
+                Elapsed time: 00:00:00.001338
+            New var:....... b = 0
+            00:21:13.870142 line        17             return a + b
+            00:21:13.870670 return      17             return a + b
+            Return value:.. 1
+            Elapsed time: 00:00:00.691823
+        New var:....... a = 1
+        00:21:14.213162 line        16             b = fib(n - 2)
+            Starting var:.. n = 1
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+            00:21:14.213827 call        11     def fib(n):
+            00:21:14.214283 line        12         if n <= 1:
+            00:21:14.214412 line        13             return n
+            00:21:14.214540 return      13             return n
+            Return value:.. 1
+            Elapsed time: 00:00:00.000972
+        New var:....... b = 1
+        00:21:14.568691 line        17             return a + b
+        00:21:14.569322 return      17             return a + b
+        Return value:.. 2
+        Elapsed time: 00:00:01.391884
+    New var:....... b = 2
+    00:21:14.935230 line        17             return a + b
+    00:21:14.935803 return      17             return a + b
+    Return value:.. 5
+    Elapsed time: 00:00:04.995987
+New var:....... a = 5
+00:21:15.319681 line        16             b = fib(n - 2)
+    Starting var:.. n = 4
+    Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+    00:21:15.320369 call        11     def fib(n):
+    00:21:15.321197 line        12         if n <= 1:
+    00:21:15.321330 line        15             a = fib(n - 1)
+        Starting var:.. n = 3
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+        00:21:15.321493 call        11     def fib(n):
+        00:21:15.321989 line        12         if n <= 1:
+        00:21:15.322175 line        15             a = fib(n - 1)
+            Starting var:.. n = 2
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+            00:21:15.322384 call        11     def fib(n):
+            00:21:15.323097 line        12         if n <= 1:
+            00:21:15.323256 line        15             a = fib(n - 1)
+                Starting var:.. n = 1
+                Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+                00:21:15.323481 call        11     def fib(n):
+                00:21:15.323946 line        12         if n <= 1:
+                00:21:15.324060 line        13             return n
+                00:21:15.324215 return      13             return n
+                Return value:.. 1
+                Elapsed time: 00:00:00.001031
+            New var:....... a = 1
+            00:21:15.717715 line        16             b = fib(n - 2)
+                Starting var:.. n = 0
+                Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+                00:21:15.718546 call        11     def fib(n):
+                00:21:15.719284 line        12         if n <= 1:
+                00:21:15.719523 line        13             return n
+                00:21:15.719695 return      13             return n
+                Return value:.. 0
+                Elapsed time: 00:00:00.001597
+            New var:....... b = 0
+            00:21:16.129575 line        17             return a + b
+            00:21:16.130188 return      17             return a + b
+            Return value:.. 1
+            Elapsed time: 00:00:00.808267
+        New var:....... a = 1
+        00:21:16.534767 line        16             b = fib(n - 2)
+            Starting var:.. n = 1
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+            00:21:16.535384 call        11     def fib(n):
+            00:21:16.535908 line        12         if n <= 1:
+            00:21:16.536061 line        13             return n
+            00:21:16.536189 return      13             return n
+            Return value:.. 1
+            Elapsed time: 00:00:00.001114
+        New var:....... b = 1
+        00:21:16.930403 line        17             return a + b
+        00:21:16.931298 return      17             return a + b
+        Return value:.. 2
+        Elapsed time: 00:00:01.610111
+    New var:....... a = 2
+    00:21:17.393571 line        16             b = fib(n - 2)
+        Starting var:.. n = 2
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+        00:21:17.394284 call        11     def fib(n):
+        00:21:17.394905 line        12         if n <= 1:
+        00:21:17.395085 line        15             a = fib(n - 1)
+            Starting var:.. n = 1
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+            00:21:17.395235 call        11     def fib(n):
+            00:21:17.395820 line        12         if n <= 1:
+            00:21:17.395973 line        13             return n
+            00:21:17.396168 return      13             return n
+            Return value:.. 1
+            Elapsed time: 00:00:00.001267
+        New var:....... a = 1
+        00:21:17.812121 line        16             b = fib(n - 2)
+            Starting var:.. n = 0
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fcfa03b7820>
+            00:21:17.812971 call        11     def fib(n):
+            00:21:17.813816 line        12         if n <= 1:
+            00:21:17.814002 line        13             return n
+            00:21:17.814277 return      13             return n
+            Return value:.. 0
+            Elapsed time: 00:00:00.001662
+        New var:....... b = 0
+        00:21:18.316445 line        17             return a + b
+        00:21:18.316977 return      17             return a + b
+        Return value:.. 1
+        Elapsed time: 00:00:00.923004
+    New var:....... b = 1
+    00:21:18.744086 line        17             return a + b
+    00:21:18.745000 return      17             return a + b
+    Return value:.. 3
+    Elapsed time: 00:00:03.425223
+New var:....... b = 3
+00:21:19.179907 line        17             return a + b
+00:21:19.180640 return      17             return a + b
+Return value:.. 8
+Elapsed time: 00:00:09.243503
+Source path:... /Users/danielm/Dropbox/software-projects/PySnooper/tests/rcviz/test_rcviz.py
+Starting var:.. n = 5
+Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7f914049f820>
+00:25:00.202946 call        11     def fib(n):
+00:25:00.204345 line        12         if n <= 1:
+00:25:00.204584 line        15             a = fib(n - 1)
+    Starting var:.. n = 4
+    Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7f914049f820>
+    00:25:00.204792 call        11     def fib(n):
+    00:25:00.205352 line        12         if n <= 1:
+    00:25:00.205522 line        15             a = fib(n - 1)
+        Starting var:.. n = 3
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7f914049f820>
+        00:25:00.205823 call        11     def fib(n):
+        00:25:00.206314 line        12         if n <= 1:
+        00:25:00.206479 line        15             a = fib(n - 1)
+            Starting var:.. n = 2
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7f914049f820>
+            00:25:00.206788 call        11     def fib(n):
+            00:25:00.207289 line        12         if n <= 1:
+            00:25:00.207414 line        15             a = fib(n - 1)
+                Starting var:.. n = 1
+                Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7f914049f820>
+                00:25:00.207601 call        11     def fib(n):
+                00:25:00.208165 line        12         if n <= 1:
+                00:25:00.208298 line        13             return n
+                00:25:00.208490 return      13             return n
+                Return value:.. 1
+                Elapsed time: 00:00:00.001372
+            New var:....... a = 1
+            00:25:00.513368 line        16             b = fib(n - 2)
+                Starting var:.. n = 0
+                Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7f914049f820>
+                00:25:00.514030 call        11     def fib(n):
+                00:25:00.514655 line        12         if n <= 1:
+                00:25:00.514827 line        13             return n
+                00:25:00.515102 return      13             return n
+                Return value:.. 0
+                Elapsed time: 00:00:00.001563
+            New var:....... b = 0
+            00:25:00.835061 line        17             return a + b
+            00:25:00.836372 return      17             return a + b
+            Return value:.. 1
+            Elapsed time: 00:00:00.630389
+        New var:....... a = 1
+        00:25:01.238803 line        16             b = fib(n - 2)
+            Starting var:.. n = 1
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7f914049f820>
+            00:25:01.239494 call        11     def fib(n):
+            00:25:01.240284 line        12         if n <= 1:
+            00:25:01.240706 line        13             return n
+            00:25:01.241344 return      13             return n
+            Return value:.. 1
+            Elapsed time: 00:00:00.002388
+        New var:....... b = 1
+        00:25:01.613229 line        17             return a + b
+        00:25:01.613870 return      17             return a + b
+        Return value:.. 2
+        Elapsed time: 00:00:01.408454
+    New var:....... a = 2
+    00:25:01.940307 line        16             b = fib(n - 2)
+        Starting var:.. n = 2
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7f914049f820>
+        00:25:01.941029 call        11     def fib(n):
+        00:25:01.941496 line        12         if n <= 1:
+        00:25:01.941631 line        15             a = fib(n - 1)
+            Starting var:.. n = 1
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7f914049f820>
+            00:25:01.941770 call        11     def fib(n):
+            00:25:01.942219 line        12         if n <= 1:
+            00:25:01.942358 line        13             return n
+            00:25:01.942496 return      13             return n
+            Return value:.. 1
+            Elapsed time: 00:00:00.000997
+        New var:....... a = 1
+        00:25:02.261701 line        16             b = fib(n - 2)
+            Starting var:.. n = 0
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7f914049f820>
+            00:25:02.262295 call        11     def fib(n):
+            00:25:02.262890 line        12         if n <= 1:
+            00:25:02.263030 line        13             return n
+            00:25:02.263163 return      13             return n
+            Return value:.. 0
+            Elapsed time: 00:00:00.001112
+        New var:....... b = 0
+        00:25:02.603437 line        17             return a + b
+        00:25:02.603967 return      17             return a + b
+        Return value:.. 1
+        Elapsed time: 00:00:00.663240
+    New var:....... b = 1
+    00:25:02.936457 line        17             return a + b
+    00:25:02.937060 return      17             return a + b
+    Return value:.. 3
+    Elapsed time: 00:00:02.732541
+New var:....... a = 3
+00:25:03.265323 line        16             b = fib(n - 2)
+    Starting var:.. n = 3
+    Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7f914049f820>
+    00:25:03.266507 call        11     def fib(n):
+    00:25:03.267498 line        12         if n <= 1:
+    00:25:03.267734 line        15             a = fib(n - 1)
+        Starting var:.. n = 2
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7f914049f820>
+        00:25:03.268056 call        11     def fib(n):
+        00:25:03.268776 line        12         if n <= 1:
+        00:25:03.268981 line        15             a = fib(n - 1)
+            Starting var:.. n = 1
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7f914049f820>
+            00:25:03.269168 call        11     def fib(n):
+            00:25:03.269846 line        12         if n <= 1:
+            00:25:03.270029 line        13             return n
+            00:25:03.270193 return      13             return n
+            Return value:.. 1
+            Elapsed time: 00:00:00.001311
+        New var:....... a = 1
+        00:25:03.601949 line        16             b = fib(n - 2)
+            Starting var:.. n = 0
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7f914049f820>
+            00:25:03.602564 call        11     def fib(n):
+            00:25:03.603081 line        12         if n <= 1:
+            00:25:03.603249 line        13             return n
+            00:25:03.603435 return      13             return n
+            Return value:.. 0
+            Elapsed time: 00:00:00.001181
+        New var:....... b = 0
+        00:25:03.966473 line        17             return a + b
+        00:25:03.967144 return      17             return a + b
+        Return value:.. 1
+        Elapsed time: 00:00:00.699537
+    New var:....... a = 1
+    00:25:04.333329 line        16             b = fib(n - 2)
+        Starting var:.. n = 1
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7f914049f820>
+        00:25:04.333902 call        11     def fib(n):
+        00:25:04.334454 line        12         if n <= 1:
+        00:25:04.334607 line        13             return n
+        00:25:04.334912 return      13             return n
+        Return value:.. 1
+        Elapsed time: 00:00:00.001386
+    New var:....... b = 1
+    00:25:04.708392 line        17             return a + b
+    00:25:04.709017 return      17             return a + b
+    Return value:.. 2
+    Elapsed time: 00:00:01.442869
+New var:....... b = 2
+00:25:05.057339 line        17             return a + b
+00:25:05.057901 return      17             return a + b
+Return value:.. 5
+Elapsed time: 00:00:04.855491
+Source path:... /Users/danielm/Dropbox/software-projects/PySnooper/tests/rcviz/test_rcviz.py
+    Elapsed time: 00:00:00.000524
+Source path:... /Users/danielm/Dropbox/software-projects/PySnooper/tests/rcviz/test_rcviz.py
+Starting var:.. n = 5
+Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc290399820>
+00:36:29.693418 call        11     def fib(n):
+00:36:29.695071 line        12         if n <= 1:
+00:36:29.695237 line        15             a = fib(n - 1)
+    Starting var:.. n = 4
+    Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc290399820>
+    00:36:29.695386 call        11     def fib(n):
+    00:36:29.695840 line        12         if n <= 1:
+    00:36:29.695986 line        15             a = fib(n - 1)
+        Starting var:.. n = 3
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc290399820>
+        00:36:29.696142 call        11     def fib(n):
+        00:36:29.696902 line        12         if n <= 1:
+        00:36:29.697066 line        15             a = fib(n - 1)
+            Starting var:.. n = 2
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc290399820>
+            00:36:29.697337 call        11     def fib(n):
+            00:36:29.698002 line        12         if n <= 1:
+            00:36:29.698129 line        15             a = fib(n - 1)
+                Starting var:.. n = 1
+                Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc290399820>
+                00:36:29.698273 call        11     def fib(n):
+                00:36:29.698859 line        12         if n <= 1:
+                00:36:29.699085 line        13             return n
+                00:36:29.699369 return      13             return n
+                Return value:.. 1
+                Elapsed time: 00:00:00.001387
+            New var:....... a = 1
+            00:36:29.983212 line        16             b = fib(n - 2)
+                Starting var:.. n = 0
+                Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc290399820>
+                00:36:29.983763 call        11     def fib(n):
+                00:36:29.984257 line        12         if n <= 1:
+                00:36:29.984402 line        13             return n
+                00:36:29.984543 return      13             return n
+                Return value:.. 0
+                Elapsed time: 00:00:00.001064
+            New var:....... b = 0
+            00:36:30.264182 line        17             return a + b
+            00:36:30.264760 return      17             return a + b
+            Return value:.. 1
+            Elapsed time: 00:00:00.567818
+        New var:....... a = 1
+        00:36:30.643609 line        16             b = fib(n - 2)
+            Starting var:.. n = 1
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc290399820>
+            00:36:30.644261 call        11     def fib(n):
+            00:36:30.644929 line        12         if n <= 1:
+            00:36:30.645108 line        13             return n
+            00:36:30.645318 return      13             return n
+            Return value:.. 1
+            Elapsed time: 00:00:00.001415
+        New var:....... b = 1
+        00:36:30.952337 line        17             return a + b
+        00:36:30.953025 return      17             return a + b
+        Return value:.. 2
+        Elapsed time: 00:00:01.257321
+    New var:....... a = 2
+    00:36:31.241945 line        16             b = fib(n - 2)
+        Starting var:.. n = 2
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc290399820>
+        00:36:31.242489 call        11     def fib(n):
+        00:36:31.243100 line        12         if n <= 1:
+        00:36:31.243333 line        15             a = fib(n - 1)
+            Starting var:.. n = 1
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc290399820>
+            00:36:31.243579 call        11     def fib(n):
+            00:36:31.244020 line        12         if n <= 1:
+            00:36:31.244158 line        13             return n
+            00:36:31.244393 return      13             return n
+            Return value:.. 1
+            Elapsed time: 00:00:00.001144
+        New var:....... a = 1
+        00:36:31.528604 line        16             b = fib(n - 2)
+            Starting var:.. n = 0
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc290399820>
+            00:36:31.529193 call        11     def fib(n):
+            00:36:31.529683 line        12         if n <= 1:
+            00:36:31.529806 line        13             return n
+            00:36:31.529979 return      13             return n
+            Return value:.. 0
+            Elapsed time: 00:00:00.001013
+        New var:....... b = 0
+        00:36:31.817217 line        17             return a + b
+        00:36:31.817916 return      17             return a + b
+        Return value:.. 1
+        Elapsed time: 00:00:00.575789
+    New var:....... b = 1
+    00:36:32.110350 line        17             return a + b
+    00:36:32.110944 return      17             return a + b
+    Return value:.. 3
+    Elapsed time: 00:00:02.415999
+New var:....... a = 3
+00:36:32.401214 line        16             b = fib(n - 2)
+    Starting var:.. n = 3
+    Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc290399820>
+    00:36:32.402041 call        11     def fib(n):
+    00:36:32.402856 line        12         if n <= 1:
+    00:36:32.403073 line        15             a = fib(n - 1)
+        Starting var:.. n = 2
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc290399820>
+        00:36:32.403412 call        11     def fib(n):
+        00:36:32.404064 line        12         if n <= 1:
+        00:36:32.404258 line        15             a = fib(n - 1)
+            Starting var:.. n = 1
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc290399820>
+            00:36:32.404455 call        11     def fib(n):
+            00:36:32.405095 line        12         if n <= 1:
+            00:36:32.405317 line        13             return n
+            00:36:32.405469 return      13             return n
+            Return value:.. 1
+            Elapsed time: 00:00:00.001254
+        New var:....... a = 1
+        00:36:32.692002 line        16             b = fib(n - 2)
+            Starting var:.. n = 0
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc290399820>
+            00:36:32.692657 call        11     def fib(n):
+            00:36:32.693266 line        12         if n <= 1:
+            00:36:32.693414 line        13             return n
+            00:36:32.693602 return      13             return n
+            Return value:.. 0
+            Elapsed time: 00:00:00.001237
+        New var:....... b = 0
+        00:36:32.987516 line        17             return a + b
+        00:36:32.988123 return      17             return a + b
+        Return value:.. 1
+        Elapsed time: 00:00:00.585246
+    New var:....... a = 1
+    00:36:33.274570 line        16             b = fib(n - 2)
+        Starting var:.. n = 1
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fc290399820>
+        00:36:33.275465 call        11     def fib(n):
+        00:36:33.276195 line        12         if n <= 1:
+        00:36:33.276353 line        13             return n
+        00:36:33.276574 return      13             return n
+        Return value:.. 1
+        Elapsed time: 00:00:00.001509
+    New var:....... b = 1
+    00:36:33.568462 line        17             return a + b
+    00:36:33.569080 return      17             return a + b
+    Return value:.. 2
+    Elapsed time: 00:00:01.167362
+New var:....... b = 2
+00:36:33.870191 line        17             return a + b
+00:36:33.870764 return      17             return a + b
+Return value:.. 5
+Elapsed time: 00:00:04.177815
+Source path:... /Users/danielm/Dropbox/software-projects/PySnooper/tests/rcviz/test_rcviz.py
+Starting var:.. n = 5
+Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fecc02d0820>
+00:37:28.683426 call        11     def fib(n):
+00:37:28.684513 line        12         if n <= 1:
+00:37:28.684657 line        15             a = fib(n - 1)
+    Starting var:.. n = 4
+    Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fecc02d0820>
+    00:37:28.684793 call        11     def fib(n):
+    00:37:28.685788 line        12         if n <= 1:
+    00:37:28.686001 line        15             a = fib(n - 1)
+        Starting var:.. n = 3
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fecc02d0820>
+        00:37:28.686346 call        11     def fib(n):
+        00:37:28.686996 line        12         if n <= 1:
+        00:37:28.687196 line        15             a = fib(n - 1)
+            Starting var:.. n = 2
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fecc02d0820>
+            00:37:28.687441 call        11     def fib(n):
+            00:37:28.688183 line        12         if n <= 1:
+            00:37:28.688340 line        15             a = fib(n - 1)
+                Starting var:.. n = 1
+                Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fecc02d0820>
+                00:37:28.688494 call        11     def fib(n):
+                00:37:28.689019 line        12         if n <= 1:
+                00:37:28.689133 line        13             return n
+                00:37:28.689238 return      13             return n
+                Return value:.. 1
+                Elapsed time: 00:00:00.000977
+            New var:....... a = 1
+            00:37:28.963237 line        16             b = fib(n - 2)
+                Starting var:.. n = 0
+                Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fecc02d0820>
+                00:37:28.963779 call        11     def fib(n):
+                00:37:28.964455 line        12         if n <= 1:
+                00:37:28.964611 line        13             return n
+                00:37:28.964825 return      13             return n
+                Return value:.. 0
+                Elapsed time: 00:00:00.001431
+            New var:....... b = 0
+            00:37:29.316450 line        17             return a + b
+            00:37:29.317291 return      17             return a + b
+            Return value:.. 1
+            Elapsed time: 00:00:00.630330
+        New var:....... a = 1
+        00:37:29.653247 line        16             b = fib(n - 2)
+            Starting var:.. n = 1
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fecc02d0820>
+            00:37:29.653932 call        11     def fib(n):
+            00:37:29.654522 line        12         if n <= 1:
+            00:37:29.654709 line        13             return n
+            00:37:29.654870 return      13             return n
+            Return value:.. 1
+            Elapsed time: 00:00:00.001253
+        New var:....... b = 1
+        00:37:29.985437 line        17             return a + b
+        00:37:29.986141 return      17             return a + b
+        Return value:.. 2
+        Elapsed time: 00:00:01.300155
+    New var:....... a = 2
+    00:37:30.273758 line        16             b = fib(n - 2)
+        Starting var:.. n = 2
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fecc02d0820>
+        00:37:30.274253 call        11     def fib(n):
+        00:37:30.274921 line        12         if n <= 1:
+        00:37:30.275067 line        15             a = fib(n - 1)
+            Starting var:.. n = 1
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fecc02d0820>
+            00:37:30.275260 call        11     def fib(n):
+            00:37:30.275782 line        12         if n <= 1:
+            00:37:30.275918 line        13             return n
+            00:37:30.276159 return      13             return n
+            Return value:.. 1
+            Elapsed time: 00:00:00.001333
+        New var:....... a = 1
+        00:37:30.561596 line        16             b = fib(n - 2)
+            Starting var:.. n = 0
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fecc02d0820>
+            00:37:30.562098 call        11     def fib(n):
+            00:37:30.562746 line        12         if n <= 1:
+            00:37:30.562910 line        13             return n
+            00:37:30.563088 return      13             return n
+            Return value:.. 0
+            Elapsed time: 00:00:00.001240
+        New var:....... b = 0
+        00:37:30.847183 line        17             return a + b
+        00:37:30.847712 return      17             return a + b
+        Return value:.. 1
+        Elapsed time: 00:00:00.573712
+    New var:....... b = 1
+    00:37:31.139899 line        17             return a + b
+    00:37:31.140582 return      17             return a + b
+    Return value:.. 3
+    Elapsed time: 00:00:02.456225
+New var:....... a = 3
+00:37:31.425028 line        16             b = fib(n - 2)
+    Starting var:.. n = 3
+    Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fecc02d0820>
+    00:37:31.425609 call        11     def fib(n):
+    00:37:31.426194 line        12         if n <= 1:
+    00:37:31.426419 line        15             a = fib(n - 1)
+        Starting var:.. n = 2
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fecc02d0820>
+        00:37:31.426661 call        11     def fib(n):
+        00:37:31.427187 line        12         if n <= 1:
+        00:37:31.427367 line        15             a = fib(n - 1)
+            Starting var:.. n = 1
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fecc02d0820>
+            00:37:31.427551 call        11     def fib(n):
+            00:37:31.428183 line        12         if n <= 1:
+            00:37:31.428360 line        13             return n
+            00:37:31.428505 return      13             return n
+            Return value:.. 1
+            Elapsed time: 00:00:00.001370
+        New var:....... a = 1
+        00:37:31.713478 line        16             b = fib(n - 2)
+            Starting var:.. n = 0
+            Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fecc02d0820>
+            00:37:31.714051 call        11     def fib(n):
+            00:37:31.714790 line        12         if n <= 1:
+            00:37:31.714938 line        13             return n
+            00:37:31.715099 return      13             return n
+            Return value:.. 0
+            Elapsed time: 00:00:00.001392
+        New var:....... b = 0
+        00:37:31.999974 line        17             return a + b
+        00:37:32.000540 return      17             return a + b
+        Return value:.. 1
+        Elapsed time: 00:00:00.574142
+    New var:....... a = 1
+    00:37:32.289153 line        16             b = fib(n - 2)
+        Starting var:.. n = 1
+        Starting var:.. fib = <function test_reviz1.<locals>.fib at 0x7fecc02d0820>
+        00:37:32.289674 call        11     def fib(n):
+        00:37:32.290413 line        12         if n <= 1:
+        00:37:32.290551 line        13             return n
+        00:37:32.290717 return      13             return n
+        Return value:.. 1
+        Elapsed time: 00:00:00.001335
+    New var:....... b = 1
+    00:37:32.587684 line        17             return a + b
+    00:37:32.588312 return      17             return a + b
+    Return value:.. 2
+    Elapsed time: 00:00:01.163150
+New var:....... b = 2
+00:37:32.890415 line        17             return a + b
+00:37:32.891092 return      17             return a + b
+Return value:.. 5
+Elapsed time: 00:00:04.208082

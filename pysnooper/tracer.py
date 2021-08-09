@@ -1,23 +1,28 @@
 # Copyright 2019 Ram Rachum and collaborators.
 # This program is distributed under the MIT license.
 
-import functools
-import inspect
-import opcode
-import os
-import sys
-import re
 import collections
 import datetime as datetime_module
+import functools
+import inspect
 import itertools
+import opcode
+import os
+import re
+import sys
 import threading
 import traceback
+import uuid
+from copy import copy
+from typing import Tuple, List
 
-from .variables import CommonVariable, Exploding, BaseVariable
 from . import utils, pycompat
+from .rcviz.plotter import plot_graph
+from .rcviz.trace_node import TraceNode
+from .variables import CommonVariable, Exploding, BaseVariable
+
 if pycompat.PY2:
     from io import open
-
 
 ipython_filename_pattern = re.compile('^<ipython-input-([0-9]+)-.*>$')
 
@@ -203,18 +208,20 @@ class Tracer:
         @pysnooper.snoop(relative_time=True)
 
     '''
+
     def __init__(self, output=None, watch=(), watch_explode=(), depth=1,
                  prefix='', overwrite=False, thread_info=False, custom_repr=(),
-                 max_variable_length=100, normalize=False, relative_time=False):
+                 max_variable_length=100, normalize=False, relative_time=False,
+                 vis_args=None, vis_outfile='reviz.png'):
         self._write = get_write_function(output, overwrite)
 
         self.watch = [
-            v if isinstance(v, BaseVariable) else CommonVariable(v)
-            for v in utils.ensure_tuple(watch)
-         ] + [
-             v if isinstance(v, BaseVariable) else Exploding(v)
-             for v in utils.ensure_tuple(watch_explode)
-        ]
+                         v if isinstance(v, BaseVariable) else CommonVariable(v)
+                         for v in utils.ensure_tuple(watch)
+                     ] + [
+                         v if isinstance(v, BaseVariable) else Exploding(v)
+                         for v in utils.ensure_tuple(watch_explode)
+                     ]
         self.frame_to_local_reprs = {}
         self.start_times = {}
         self.depth = depth
@@ -225,14 +232,20 @@ class Tracer:
         self.target_codes = set()
         self.target_frames = set()
         self.thread_local = threading.local()
-        if len(custom_repr) == 2 and not all(isinstance(x,
-                      pycompat.collections_abc.Iterable) for x in custom_repr):
+        if len(custom_repr) == 2 and \
+                not all(isinstance(x, pycompat.collections_abc.Iterable) for x in custom_repr):
             custom_repr = (custom_repr,)
         self.custom_repr = custom_repr
         self.last_source_path = None
         self.max_variable_length = max_variable_length
         self.normalize = normalize
         self.relative_time = relative_time
+        self.vis = vis_args is not None
+        self.vis_kwargs = {}
+        self.vis_g_list: List[Tuple[TraceNode, TraceNode]] = []
+        self.vis_stack: List[TraceNode] = []
+        self.vis_args: List[str] = [] if None else vis_args
+        self.vis_outfile = vis_outfile
 
     def __call__(self, function_or_class):
         if DISABLED:
@@ -326,6 +339,8 @@ class Tracer:
         )
         #                                                                     #
         ### Finished writing elapsed time. ####################################
+        if self.vis:
+            plot_graph(self.vis_g_list, filename=self.vis_outfile)
 
     def _is_internal_frame(self, frame):
         return frame.f_code.co_filename == Tracer.__enter__.__code__.co_filename
@@ -418,16 +433,15 @@ class Tracer:
                                                        normalize=self.normalize,
                                                        )
 
-        newish_string = ('Starting var:.. ' if event == 'call' else
-                                                            'New var:....... ')
+        newish_string = ('Starting var:.. ' if event == 'call' else 'New var:....... ')
 
         for name, value_repr in local_reprs.items():
+            if locals()['name'] in self.vis_args:
+                self.vis_kwargs[locals()['name']] = locals()['value_repr']
             if name not in old_local_reprs:
-                self.write('{indent}{newish_string}{name} = {value_repr}'.format(
-                                                                       **locals()))
+                self.write('{indent}{newish_string}{name} = {value_repr}'.format(**locals()))
             elif old_local_reprs[name] != value_repr:
-                self.write('{indent}Modified var:.. {name} = {value_repr}'.format(
-                                                                   **locals()))
+                self.write('{indent}Modified var:.. {name} = {value_repr}'.format(**locals()))
 
         #                                                                     #
         ### Finished newish and modified variables. ###########################
@@ -471,8 +485,14 @@ class Tracer:
             self.write('{indent}Call ended by exception'.
                        format(**locals()))
         else:
+            # lines, returns, and calls
             self.write(u'{indent}{timestamp} {thread_info}{event:9} '
                        u'{line_no:4} {source_line}'.format(**locals()))
+            if event == 'call':
+                source_line = locals()['source_line'].strip()
+                function_depth = len(locals()['indent']) // 4
+                self.vis_stack.append(TraceNode(source_line, str(uuid.uuid4()),
+                                                copy(self.vis_kwargs), function_depth, None))
 
         if event == 'return':
             self.frame_to_local_reprs.pop(frame, None)
@@ -487,6 +507,11 @@ class Tracer:
                                                             )
                 self.write('{indent}Return value:.. {return_value_repr}'.
                            format(**locals()))
+                self.vis_stack[-1].return_val = locals()['return_value_repr']
+                tn1 = self.vis_stack.pop()
+                if self.vis_stack:
+                    tn2 = self.vis_stack[-1]
+                    self.vis_g_list.append((tn2, tn1))
 
         if event == 'exception':
             exception = '\n'.join(traceback.format_exception_only(*arg[:2])).strip()
