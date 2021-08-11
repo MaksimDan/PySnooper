@@ -22,11 +22,11 @@ def plot_graph(list_graph: List[Tuple[TraceNode, TraceNode]],
     g = graphviz.Digraph(name, filename=filename, format=_format)
 
     for tn in itertools.chain(*list_graph):
-        label = format_dict(tn.kwargs)
+        label = format_dict(tn.kwargs).replace('{', '').replace('}', '').replace('|', '')
         label = "{{" + tn.function_name + "}" + "|" + label + "}"
         g.node(tn.id, shape=shape, label=label)
 
     for e1, e2 in list_graph:
         g.edge(e1.id, e2.id, label=e2.return_val, color='grey', fontsize='10')
-    g.render(filename=filename.strip(_format), cleanup=True)
+    g.render(filename=filename.strip(f'.{_format}'), cleanup=True)
 
