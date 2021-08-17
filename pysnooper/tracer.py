@@ -490,8 +490,9 @@ class Tracer:
                        u'{line_no:4} {source_line}'.format(**locals()))
             if event == 'call':
                 source_line = locals()['source_line'].strip()
+                func_name = re.search('(?<=def )(.*?)(?=\()', source_line).group()
                 function_depth = len(locals()['indent']) // 4
-                self.vis_stack.append(TraceNode(source_line, str(uuid.uuid4()),
+                self.vis_stack.append(TraceNode(func_name, str(uuid.uuid4()),
                                                 copy(self.vis_kwargs), function_depth, None))
 
         if event == 'return':
